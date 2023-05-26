@@ -28,4 +28,4 @@ class Pdi(models.Model):
         # Verifica se a data final é anterior à data inicial
         if self.final_datetime and self.initial_datetime:
             if self.final_datetime < self.initial_datetime:
-                raise ValidationError('A data final deve ter seu prazo posterior à data inicial.')
+                raise ValidationError('Data final deve ter seu prazo posterior à data inicial.')
